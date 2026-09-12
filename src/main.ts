@@ -1,16 +1,16 @@
 import './style.css'
-//import "./TemasTs/01-Tipos-bas.ts"
-//import "./TemasTs/02-obj-interfaz-arre.ts"
-//import "./TemasTs/03-funciones.ts"
-//import "./TemasTs/04-desestructuracion-obj-arre.ts"
-//import "./TemasTs/05-desestructuracion-funciones.ts"
-import "./TemasTs/05-desestructuracion-funciones.ts"
-import "./TemasTs/06-importar-exportar.ts"
+import './TemasTS/01-Tipos-bas.ts'
+import './TemasTS/02-obj-interfaz-arre.ts'
+import './TemasTS/03-Funciones.ts'
+import './TemasTS/04-Desestructuracion-obj-arre.ts'
+import './TemasTS/05-Desestructuracion-funciones.ts'
+import './TemasTS/06-importar-exportar.ts'
+import './TemasTS/07-Clases.ts'
 import heroImg from './assets/hero.png'
 import typescriptLogo from './assets/typescript.svg'
 import viteLogo from './assets/vite.svg'
 import { setupCounter } from './counter.ts'
-
+ 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <section id="center">
   <div class="hero">
@@ -24,9 +24,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
   <button id="counter" type="button" class="counter"></button>
 </section>
-
+ 
 <div class="ticks"></div>
-
+ 
 <section id="next-steps">
   <div id="docs">
     <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
@@ -59,9 +59,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </ul>
   </div>
 </section>
-
+ 
 <div class="ticks"></div>
 <section id="spacer"></section>
 `
-
+ 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+ 
